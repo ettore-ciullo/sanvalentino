@@ -34,7 +34,7 @@ body {
     width: 300px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
@@ -43,11 +43,12 @@ body {
     justify-content: center;
     gap: 20px;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .btn {
-    font-family: 'Indie Flower', cursive; /* Updated font */
+    font-family: 'Indie Flower', cursive;
+    /* Updated font */
     background-color: #ff4d6d;
     color: white;
     padding: 15px 32px;
@@ -58,6 +59,10 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border: none;
+    outline: none;
+    /* Remove focus outline */
+    -webkit-tap-highlight-color: transparent;
+    /* Remove highlight on mobile */
     border-radius: 50px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
@@ -69,7 +74,8 @@ body {
 }
 
 #noBtn {
-    background-color: #a0a0a0; /* Gray for No initially */
+    background-color: #a0a0a0;
+    /* Gray for No initially */
     box-shadow: 0 4px 15px rgba(160, 160, 160, 0.4);
 }
 
@@ -112,9 +118,11 @@ body {
         transform: translateY(0) rotate(45deg) scale(1);
         opacity: 0;
     }
+
     10% {
         opacity: 0.8;
     }
+
     100% {
         transform: translateY(-100vh) rotate(45deg) scale(0.5);
         opacity: 0;
